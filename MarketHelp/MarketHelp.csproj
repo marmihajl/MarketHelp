@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE5345F0-A66C-49D8-917E-63766AE1BD07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarketHelp</RootNamespace>
+    <AssemblyName>MarketHelp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.5.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UputePDF">
+      <HintPath>..\UputePDF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Artikli.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dobavljaci_artikala.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DodajRok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajRok.Designer.cs">
+      <DependentUpon>DodajRok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodavanje_korisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodavanje_korisnika.Designer.cs">
+      <DependentUpon>Dodavanje_korisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenti.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Izbornik_prodavac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izbornik_prodavac.Designer.cs">
+      <DependentUpon>Izbornik_prodavac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnici.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nacini_placanja.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NovaBaza.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NovaBaza.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NovaBaza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NovaBaza.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NovaBaza.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Place.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrijavaKorisnika.cs" />
+    <Compile Include="Prijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijava.Designer.cs">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izbornik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izbornik.Designer.cs">
+      <DependentUpon>Izbornik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izdavanje_racuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izdavanje_racuna.Designer.cs">
+      <DependentUpon>Izdavanje_racuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoviArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoviArtikl.Designer.cs">
+      <DependentUpon>NoviArtikl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoviSuradnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoviSuradnik.Designer.cs">
+      <DependentUpon>NoviSuradnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParametriZaliha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParametriZaliha.Designer.cs">
+      <DependentUpon>ParametriZaliha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pregled i storniranje izdanih računa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pregled i storniranje izdanih računa.Designer.cs">
+      <DependentUpon>Pregled i storniranje izdanih računa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pregled placa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pregled placa.Designer.cs">
+      <DependentUpon>Pregled placa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pregled roka trajanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pregled roka trajanja.Designer.cs">
+      <DependentUpon>Pregled roka trajanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prijava korisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijava korisnika.Designer.cs">
+      <DependentUpon>Prijava korisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SlanjeNarudzbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlanjeNarudzbe.Designer.cs">
+      <DependentUpon>SlanjeNarudzbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stavke_dokumenta.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suradnici.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Uloge_korisnika.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UpravljanjeDobavljacima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpravljanjeDobavljacima.Designer.cs">
+      <DependentUpon>UpravljanjeDobavljacima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpravljanjeNarudzbama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpravljanjeNarudzbama.Designer.cs">
+      <DependentUpon>UpravljanjeNarudzbama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upravljanje_korisnicima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upravljanje_korisnicima.Designer.cs">
+      <DependentUpon>Upravljanje_korisnicima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vrsta_dokumenta.cs">
+      <DependentUpon>NovaBaza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zalihe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zalihe.Designer.cs">
+      <DependentUpon>Zalihe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_16054_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_16054_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DodajRok.resx">
+      <DependentUpon>DodajRok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodavanje_korisnika.resx">
+      <DependentUpon>Dodavanje_korisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izbornik_prodavac.resx">
+      <DependentUpon>Izbornik_prodavac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prijava.resx">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izbornik.resx">
+      <DependentUpon>Izbornik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izdavanje_racuna.resx">
+      <DependentUpon>Izdavanje_racuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoviArtikl.resx">
+      <DependentUpon>NoviArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoviSuradnik.resx">
+      <DependentUpon>NoviSuradnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParametriZaliha.resx">
+      <DependentUpon>ParametriZaliha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pregled i storniranje izdanih računa.resx">
+      <DependentUpon>Pregled i storniranje izdanih računa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pregled placa.resx">
+      <DependentUpon>Pregled placa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pregled roka trajanja.resx">
+      <DependentUpon>Pregled roka trajanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prijava korisnika.resx">
+      <DependentUpon>Prijava korisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SlanjeNarudzbe.resx">
+      <DependentUpon>SlanjeNarudzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpravljanjeDobavljacima.resx">
+      <DependentUpon>UpravljanjeDobavljacima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpravljanjeNarudzbama.resx">
+      <DependentUpon>UpravljanjeNarudzbama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upravljanje_korisnicima.resx">
+      <DependentUpon>Upravljanje_korisnicima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zalihe.resx">
+      <DependentUpon>Zalihe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="NovaBaza.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NovaBaza.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="NovaBaza.edmx.diagram">
+      <DependentUpon>NovaBaza.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Artikli.datasource" />
+    <None Include="Properties\DataSources\Dobavljaci_artikala.datasource" />
+    <None Include="Properties\DataSources\Dokumenti.datasource" />
+    <None Include="Properties\DataSources\Korisnici.datasource" />
+    <None Include="Properties\DataSources\Place.datasource" />
+    <None Include="Properties\DataSources\Stavke_dokumenta.datasource" />
+    <None Include="Properties\DataSources\Suradnici.datasource" />
+    <None Include="Properties\DataSources\Uloge_korisnika.datasource" />
+    <None Include="Properties\DataSources\Zalihe.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_16054_DBDataSet.xsc">
+      <DependentUpon>_16054_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_16054_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_16054_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_16054_DBDataSet.xss">
+      <DependentUpon>_16054_DBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NovaBaza.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NovaBaza.edmx</DependentUpon>
+      <LastGenOutput>NovaBaza.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="NovaBaza.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NovaBaza.edmx</DependentUpon>
+      <LastGenOutput>NovaBaza.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="00d9e4da2e7041eb886fe19f285364d5" Name="Diagram1">
+        <EntityTypeShape EntityType="DBModel.Artikli" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Dobavljaci_artikala" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Dokumenti" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Korisnici" Width="1.5" PointX="3.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Nacini_placanja" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Stavke_dokumenta" Width="1.5" PointX="8.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Suradnici" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Uloge_korisnika" Width="1.5" PointX="1.5" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="DBModel.FK_Dobavljaci_artikala_Artikli" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Stavke_dokumenta_Artikli" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Dobavljaci_artikala_Suradnici" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Dokumenti_Korisnici" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Dokumenti_Nacini_placanja" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Dokumenti_Suradnici" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Stavke_dokumenta_Dokumenti" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Korisnici_Uloge_korisnika" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBModel.Place" Width="1.5" PointX="6" PointY="8.875" />
+        <AssociationConnector Association="DBModel.FK_Place_Korisnici" />
+        <EntityTypeShape EntityType="DBModel.Vrsta_dokumenta" Width="1.5" PointX="6.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,48 @@
+﻿organizacija;grad
+AUTO ŠATRAK d.o.o.;Koprivnica
+MDV - centar d.o.o.;Varaždin
+MEDIA COMMERCE d.o.o.;Zagreb
+HESPO d.o.o.;Prelog
+YTRES d.o.o.;Varaždin
+OMCO CROATIA d.o.o.;Hum na Sutli
+Jedinstvo - Kartonaža d.o.o.;42240 Ivanec
+Čakovečki mlinovi d.d. Čakovec;40000 Čakovec
+PHOENIX farmacija d.d.;Zagreb
+Derma d.d.;Varaždin
+VARTEKS d.d.;Varaždin
+Windor d.o.o.;Pleternica
+Ionix Systems d.o.o.;Zagreb
+Knauf d.o.o., Podružnica Zagreb;Zagreb
+Trgonom d.o.o.;Novi Marof 42220
+Drvodjelac d.o.o.;42240 Ivanec
+KTC grupa;48260 Križevci
+Petrochem d.o.o.;42000 Varaždin
+Muraplast d.o.o.;40329 Kotoriba
+Oprema-uređaji d.d.;42230 Ludbreg
+Metalska industrija Varaždin d.d.;42000 Varaždin
+Eurocable Group d.d.;10090 Zagreb
+Gumiimpex - GRP d.d.;42000 Varaždin
+T7 VIS d.o.o.;42000 Varaždin
+Massmarket d.o.o.;Zagreb
+Trgometal d.o.o.;Varaždin
+BOXMARK LEATHER d.o.o.;Varaždin
+Mehanotehna d.o.o.;Osijek
+Orto Rea d.o.o.;Varaždin
+Larix d.o.o.;Varaždin
+Bernarda d.o.o.;Nedelišće
+Hobby hižica;Varaždin
+Zagorje - Tehnobeton d.d.;Varaždin
+KOTONTEKS d.o.o.;Varaždin
+KB d.o.o.;Sračinec
+SELK d.d.;Kutina
+WT International d.o.o.;42204 Turčin
+Centrometal d.o.o.;Macinec
+Trgostil d.d.;Donja Stubica
+Avorato d.o.o.;Varaždin
+Szakal Metal d.o.o.;Varaždin
+ELEKTROKEM d.o.o.;Sesvete
+GIT d.o.o.;Varaždin
+Marcon d.o.o.;42000 Varaždin
+Vetropack Straža d.d.;Hum na Sutli
+JELEN Professional d.o.o.;Čakovec
+
